@@ -1,0 +1,682 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/"
+     xml:base="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ElderCareHome="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#alertsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#alertsFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#monitors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#monitors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#performsActivityIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#performsActivityIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasAlertStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasAlertStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasLightLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasLightLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasOccupancy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasOccupancy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bathroom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bathroom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bedroom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bedroom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Eating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Eating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#LivingRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#LivingRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MotionSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MotionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Sleeping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Sleeping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#TakingMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#TakingMedication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Thermostat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Thermostat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Walking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Walking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bedroom1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bedroom"/>
+        <ElderCareHome:contains rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector1"/>
+        <ElderCareHome:hasOccupancy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</ElderCareHome:hasOccupancy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector"/>
+        <ElderCareHome:hasAlertStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ElderCareHome:hasAlertStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#LivingRoom1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#LivingRoom1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#LivingRoom"/>
+        <ElderCareHome:contains rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MotionSensor1"/>
+        <ElderCareHome:contains rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight1"/>
+        <ElderCareHome:hasLightLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</ElderCareHome:hasLightLevel>
+        <ElderCareHome:hasOccupancy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</ElderCareHome:hasOccupancy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MedicationActivity1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MedicationActivity1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#TakingMedication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MotionSensor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MotionSensor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MotionSensor"/>
+        <ElderCareHome:monitors rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#WalkingActivity1"/>
+        <ElderCareHome:hasTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.5</ElderCareHome:hasTemperature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SleepingActivity1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SleepingActivity1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Sleeping"/>
+        <ElderCareHome:performsActivityIn rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bedroom1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight"/>
+        <ElderCareHome:hasAlertStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ElderCareHome:hasAlertStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#WalkingActivity1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#WalkingActivity1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Walking"/>
+        <ElderCareHome:performsActivityIn rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#LivingRoom1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Activates fall detector alert if a sleeping activity occurs in the bedroom</rdfs:comment>
+        <rdfs:label>FallDetectorDuringSleeping</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Sleeping"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#performsActivityIn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Bedroom"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#contains"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasAlertStatus"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Activates fall detector alert when a walking activity occurs in the room</rdfs:comment>
+        <rdfs:label>FallDetectorWalkingAlert</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Walking"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#performsActivityIn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#contains"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#FallDetector"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasAlertStatus"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Turns on the smart light (sets hasAlertStatus=true) when motion is detected in an occupied room</rdfs:comment>
+        <rdfs:label>SafeMovementLight</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#contains"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#MotionSensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasOccupancy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasAlertStatus"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Turns off smart light (sets hasAlertStatus=false) if room is unoccupied</rdfs:comment>
+        <rdfs:label>ResetLightIfRoomEmpty</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#Room"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#contains"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#SmartLight"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasOccupancy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/r"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome#hasAlertStatus"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/msi/ontologies/2025/ElderCareHome/d"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
